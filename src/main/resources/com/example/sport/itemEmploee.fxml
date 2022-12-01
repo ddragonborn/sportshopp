@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="100.0" prefWidth="518.0" style="-fx-background-radius: 30; -fx-background-color: #333542;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport.ItemEmploeeController">
+   <children>
+      <Label layoutX="24.0" layoutY="14.0" text="ФИО" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="42.0" text="Адресс" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="69.0" text="Телефон" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="42.0" text="Логин" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="333.0" layoutY="69.0" text="Дата входа" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label fx:id="nameField" layoutX="76.0" layoutY="14.0" prefHeight="17.0" prefWidth="191.0" text="name" textFill="WHITE" />
+      <Label fx:id="adressField" layoutX="76.0" layoutY="42.0" prefHeight="17.0" prefWidth="191.0" text="adress" textFill="WHITE" />
+      <Label fx:id="phoneField" layoutX="82.0" layoutY="69.0" prefHeight="17.0" prefWidth="178.0" text="phone" textFill="WHITE" />
+      <Label fx:id="loginField" layoutX="378.0" layoutY="42.0" prefHeight="17.0" prefWidth="113.0" text="login" textFill="WHITE" />
+      <Label fx:id="dateField" layoutX="403.0" layoutY="69.0" prefHeight="17.0" prefWidth="88.0" text="date" textFill="WHITE" />
+   </children>
+</AnchorPane>

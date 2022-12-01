@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport.startScreenController">
+   <children>
+      <Label layoutX="424.0" layoutY="170.0" text="SPORTSSHOP">
+         <font>
+            <Font name="Calibri Bold" size="24.0" />
+         </font>
+      </Label>
+      <TextField fx:id="logLabel" layoutX="353.0" layoutY="255.0" prefHeight="46.0" prefWidth="274.0" promptText="Логин">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="passLabel" layoutX="353.0" layoutY="323.0" prefHeight="46.0" prefWidth="274.0" promptText="Пароль">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btnLog" layoutX="415.0" layoutY="415.0" mnemonicParsing="false" prefHeight="39.0" prefWidth="150.0" style="-fx-background-color: #333542;" text="Войти" textFill="WHITE">
+         <font>
+            <Font name="Calibri Bold" size="18.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="96.0" fitWidth="96.0" layoutX="442.0" layoutY="69.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icon.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="regBtn" layoutX="836.0" layoutY="20.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="104.0" style="-fx-background-color: #333542;" text="Регистрация" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label fx:id="infoLabel" layoutX="421.0" layoutY="383.0" prefHeight="17.0" prefWidth="139.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.sport.MenuScreenController">
+    <children>
+      <Label layoutX="111.0" layoutY="45.0" text="SportShop">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="69.0" fitWidth="67.0" layoutX="29.0" layoutY="26.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/icon.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="56.0" fitWidth="75.0" layoutX="864.0" layoutY="31.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../img/profile 1.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="fioLabel" alignment="CENTER" layoutX="621.0" layoutY="46.0" prefHeight="28.0" prefWidth="234.0" text="FIO" textAlignment="CENTER">
+         <font>
+            <Font name="Bookshelf Symbol 7" size="14.0" />
+         </font></Label>
+      <Button fx:id="btnMC" layoutX="262.0" layoutY="100.0" mnemonicParsing="false" onAction="#MC" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #333542;" text="Мужские ботинки" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+        <Button fx:id="btnWF" layoutX="420.0" layoutY="100.0" mnemonicParsing="false" onAction="#WF" prefHeight="40.0" prefWidth="168.0" style="-fx-background-color: #333542;" text="Женские футболки" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+        </Button>
+        <Button fx:id="btnMF" layoutX="614.0" layoutY="100.0" mnemonicParsing="false" onAction="#MF" prefHeight="40.0" prefWidth="168.0" style="-fx-background-color: #333542;" text="Мужские футболки" textFill="WHITE">
+            <font>
+                <Font name="System Bold" size="12.0" />
+            </font>
+      </Button>
+      <Button fx:id="btnWC" layoutX="111.0" layoutY="100.0" mnemonicParsing="false" onAction="#WC" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #333542;" text="Женские кроссовки" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnMain" layoutX="25.0" layoutY="100.0" mnemonicParsing="false" onAction="#main" prefHeight="40.0" prefWidth="75.0" style="-fx-background-color: #333542;" text="Главная" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="searchField" layoutX="212.0" layoutY="39.0" onKeyReleased="#search" prefHeight="40.0" prefWidth="399.0" promptText="Поиск...." />
+          <ScrollPane fx:id="scrollCat" layoutX="185.0" layoutY="155.0" prefHeight="381.0" prefWidth="759.0" styleClass="transparent" stylesheets="@../../../../../../../../../Delivery4.1/src/main/resources/styles/main.css">
+              <content>
+                  <GridPane fx:id="gridProduct" prefHeight="1.0" prefWidth="0.0">
+                      <columnConstraints>
+                          <ColumnConstraints minWidth="10.0" prefWidth="100.0" />
+                      </columnConstraints>
+               <padding>
+                  <Insets left="10.0" right="10.0" />
+               </padding>
+                  </GridPane>
+              </content>
+              <padding>
+                  <Insets top="10.0" />
+              </padding>
+          </ScrollPane>
+      <Button fx:id="priceUp" layoutX="26.0" layoutY="212.0" mnemonicParsing="false" onAction="#sortUp" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #333542;" text="По возрастанию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="priceDown" layoutX="27.0" layoutY="245.0" mnemonicParsing="false" onAction="#sortDown" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #333542;" text="По убыванию" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="AZ" layoutX="27.0" layoutY="277.0" mnemonicParsing="false" onAction="#AZ" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #333542;" text="От А-Я" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="ZA" layoutX="27.0" layoutY="308.0" mnemonicParsing="false" onAction="#ZA" prefHeight="25.0" prefWidth="148.0" style="-fx-background-color: #333542;" text="От Я-А" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Label layoutX="53.0" layoutY="163.0" prefHeight="26.0" prefWidth="95.0" text="Сортировка">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnOrder" layoutX="25.0" layoutY="454.0" mnemonicParsing="false" onAction="#goCreateOrder" prefHeight="40.0" prefWidth="136.0" style="-fx-background-color: #333542;" text="Оформить заказ" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Button>
+      <Button fx:id="btnBack" layoutX="29.0" layoutY="361.0" mnemonicParsing="false" onAction="#btnbac" prefHeight="28.0" prefWidth="142.0" style="-fx-background-color: #333542;" text="Выйти" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Button>
+    </children>
+</AnchorPane>
